@@ -42,15 +42,6 @@ templates = Jinja2Templates(directory=ruta_templates)
 aplicacion.include_router(router_web, prefix="", tags=["Web"])
 aplicacion.include_router(router_audio, prefix="/api/audio", tags=["Audio"])
 
-@aplicacion.get("/")
-async def raiz():
-    """Endpoint raíz de la aplicación"""
-    return {
-        "mensaje": "Sistema de Procesamiento de Audio",
-        "version": "1.0.0",
-        "documentacion": "/documentacion"
-    }
-
 @aplicacion.get("/salud")
 async def verificar_salud():
     """Endpoint para verificar el estado de la aplicación"""
