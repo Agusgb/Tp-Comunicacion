@@ -1,4 +1,4 @@
-# Flask y dependencias web (compatible con Python  3.8 a 3.13)
+# Flask y dependencias web (compatible con Python 3.13 )
 flask==2.3.3
 flask-cors==4.0.0
 fastapi==0.111.1
@@ -13,3 +13,4 @@ matplotlib==3.10.3
 # Utilidades
 aiofiles==23.2.1
 pydub==0.25.1 
+audioop-lts==0.2.2
